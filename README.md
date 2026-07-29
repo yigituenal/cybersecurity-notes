@@ -1,2 +1,19 @@
-# cybersecurity-notes
-cybersecurity-notes/ │ ├── README.md ├── Networking/ │   ├── DNS.md │   ├── DHCP.md │   └── HTTP-HTTPS.md │ ├── Linux/ │   └── Linux-CLI.md │ ├── Windows/ │   └── Windows-CLI.md │ └── TryHackMe/     └── Pre-Security.md
+# Cybersecurity Notes
+
+Welcome!
+
+This repository contains my cybersecurity learning notes and hands-on practice.
+
+## Topics
+
+- Networking
+- Linux
+- Windows
+- TryHackMe
+- SOC Analyst Journey
+
+## Platforms
+
+- TryHackMe
+- VirtualBox
+- Kali Linux
