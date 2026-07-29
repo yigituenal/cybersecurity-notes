@@ -17,3 +17,10 @@ This repository contains my cybersecurity learning notes and hands-on practice.
 - TryHackMe
 - VirtualBox
 - Kali Linux
+## Learning Progress
+
+- ✅ Pre Security
+- ✅ Networking Basics
+- ✅ Linux Basics
+- 🔄 Cyber Security 101
+- ⏳ SOC Level 1
