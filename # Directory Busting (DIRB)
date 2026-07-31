@@ -1,0 +1,51 @@
+# Directory Busting (DIRB)
+
+## What is DIRB?
+
+DIRB is a web content scanner used to discover hidden files and directories on a web server.
+
+It works by sending HTTP requests using a predefined wordlist and analyzing the server's responses to identify existing resources. :contentReference[oaicite:0]{index=0}
+
+---
+
+## Purpose
+
+- Discover hidden directories
+- Discover hidden files
+- Find admin panels
+- Identify backup files
+- Enumerate web applications
+
+---
+
+## Basic Usage
+
+```bash
+dirb http://example.com
+```
+
+---
+
+## Example
+
+```bash
+dirb http://example.com
+```
+
+Possible results:
+
+```
+/admin
+/login
+/uploads
+/backup
+/images
+```
+
+---
+
+## Common HTTP Responses
+
+- **200 OK** → Resource exists
+- **403 Forbidden** → Resource exists but access is denied
+- **404 Not Found** → Resource does not exist
