@@ -1,0 +1,135 @@
+# Common Vulnerabilities and Exposures (CVE)
+
+## What is CVE?
+
+The **Common Vulnerabilities and Exposures (CVE)** program provides a standardized system for identifying publicly disclosed security vulnerabilities.
+
+Each confirmed vulnerability is assigned a unique identifier in the following format:
+
+```
+CVE-Year-ID
+```
+
+Example:
+
+```
+CVE-2025-55182
+```
+
+This unique identifier ensures that security professionals, vendors, researchers, and security tools all refer to the same vulnerability.
+
+---
+
+## Well-Known CVEs
+
+Some vulnerabilities become widely known and receive memorable names, such as:
+
+- Heartbleed
+- Log4Shell
+- React2Shell
+
+These names refer to vulnerabilities that also have official CVE identifiers.
+
+---
+
+## CVSS (Common Vulnerability Scoring System)
+
+Each CVE is assigned a **CVSS score**, which measures the severity of the vulnerability.
+
+The score is based on several factors:
+
+### Impact
+
+What damage could an attacker cause if the vulnerability is exploited?
+
+Examples:
+
+- Data theft
+- Remote Code Execution (RCE)
+- Privilege Escalation
+
+---
+
+### Complexity
+
+How difficult is it to exploit the vulnerability?
+
+- Low complexity → Easy to exploit
+- High complexity → Requires specific conditions
+
+---
+
+### Accessibility
+
+How likely is it that an attacker can exploit the vulnerability?
+
+Examples:
+
+- Can it be exploited remotely?
+- Does it require authentication?
+- Does the attacker need local access?
+
+---
+
+## Why CVSS Matters
+
+Organizations use CVSS scores to prioritize remediation efforts.
+
+Higher-risk vulnerabilities are patched first to reduce overall security risk.
+
+---
+
+## Proof of Concept (PoC)
+
+A **Proof of Concept (PoC)** is code or a script that demonstrates how a vulnerability can be exploited.
+
+PoCs help:
+
+- Verify vulnerabilities
+- Test security controls
+- Understand exploitation techniques
+
+---
+
+## Exploit Database (Exploit-DB)
+
+Exploit-DB is a public repository that contains:
+
+- Public exploits
+- Proof of Concepts (PoCs)
+- CVE references
+- Security research
+
+Security professionals use Exploit-DB to understand how known vulnerabilities can be exploited.
+
+---
+
+## Example Workflow
+
+Software Version
+
+↓
+
+Search for CVE
+
+↓
+
+Review CVSS Score
+
+↓
+
+Check Exploit-DB for PoC
+
+↓
+
+Apply Security Patch
+
+---
+
+## Key Takeaways
+
+- **CVE** uniquely identifies publicly disclosed vulnerabilities.
+- **CVSS** measures the severity of a vulnerability.
+- Organizations prioritize patches based on CVSS scores.
+- **PoCs** demonstrate how vulnerabilities can be exploited.
+- **Exploit-DB** provides public exploits and PoCs for known CVEs.
