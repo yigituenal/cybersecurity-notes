@@ -1,1 +1,206 @@
+# Active Directory Fundamentals
 
+## What is Active Directory?
+
+Active Directory (AD) is Microsoft's centralized identity and access management service used in Windows domain environments.
+
+It allows administrators to manage:
+
+- Users
+- Computers
+- Groups
+- Policies
+- Authentication
+- Authorization
+
+from a single location.
+
+---
+
+# Active Directory Components
+
+## Domain
+
+A logical group of Windows computers and users that share the same Active Directory database.
+
+Example:
+
+```
+corp.local
+```
+
+---
+
+## Domain Controller (DC)
+
+A server that hosts Active Directory Domain Services (AD DS).
+
+Responsibilities:
+
+- Authenticate users
+- Store the Active Directory database
+- Apply Group Policies
+- Manage users and computers
+
+---
+
+## Organizational Unit (OU)
+
+A container used to organize users, groups, and computers.
+
+Example:
+
+```
+Company
+│
+├── Users
+├── Servers
+├── Workstations
+└── IT
+```
+
+OUs simplify administration and Group Policy deployment.
+
+---
+
+## Objects
+
+Anything stored inside Active Directory.
+
+Examples:
+
+- Users
+- Computers
+- Printers
+- Groups
+- Shared folders
+
+---
+
+## Forest
+
+The highest logical structure in Active Directory.
+
+A forest may contain one or more domains.
+
+---
+
+## Tree
+
+A collection of domains sharing a common namespace.
+
+Example:
+
+```
+company.local
+
+↓
+
+eu.company.local
+
+↓
+
+it.company.local
+```
+
+---
+
+# Authentication
+
+Active Directory primarily uses:
+
+- Kerberos
+- NTLM
+
+Kerberos is the default authentication protocol.
+
+---
+
+# Group Policy (GPO)
+
+Group Policy allows administrators to centrally configure Windows settings.
+
+Examples:
+
+- Password Policy
+- Desktop Restrictions
+- Software Deployment
+- Firewall Rules
+- Security Settings
+
+---
+
+# Active Directory Users
+
+Each user has:
+
+- Username
+- Password
+- SID (Security Identifier)
+- Permissions
+
+Users can belong to one or more security groups.
+
+---
+
+# Security Groups
+
+Groups simplify permission management.
+
+Examples:
+
+- Domain Admins
+- Domain Users
+- Enterprise Admins
+- Backup Operators
+
+Permissions are usually assigned to groups instead of individual users.
+
+---
+
+# Domain Join
+
+A Windows computer can join a domain.
+
+Benefits:
+
+- Centralized authentication
+- Group Policy management
+- Shared resources
+- Single Sign-On (SSO)
+
+---
+
+# DNS and Active Directory
+
+Active Directory heavily relies on DNS.
+
+DNS is responsible for locating:
+
+- Domain Controllers
+- Authentication services
+- Domain resources
+
+Without DNS, Active Directory cannot function properly.
+
+---
+
+# Common Administrative Tools
+
+- Active Directory Users and Computers (ADUC)
+- Group Policy Management
+- Active Directory Administrative Center
+- DNS Manager
+- Server Manager
+
+---
+
+# Key Takeaways
+
+- Active Directory centralizes identity management.
+- Domains organize Windows environments.
+- Domain Controllers authenticate users.
+- OUs organize Active Directory objects.
+- Kerberos is the default authentication protocol.
+- Group Policy simplifies administration.
+- DNS is essential for Active Directory.
